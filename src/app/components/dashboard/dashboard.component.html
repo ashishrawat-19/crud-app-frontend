@@ -1,0 +1,33 @@
+<!-- dashboard.component.html -->
+<div class="dashboard">
+    <h1>Dashboard</h1>
+    <div *ngIf="!enableForm">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Designation</th>
+                    <th>Experience</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let info of info">
+                    <td>{{ info.name }}</td>
+                    <td>{{ info.Designation }}</td>
+                    <td>{{ info.Experience }}</td>
+                    <td>
+                        <button class="action-button edit-button" (click)="editInfo(info)">Edit</button>
+                        <button class="action-button delete-button" (click)="deleteInfo(info)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>Number of records: {{ recordCount }}</p>
+    <button class="add-button" (click)="showForm()">Add New Record</button>
+
+    <div *ngIf="enableForm">
+        <app-form (formSubmitted)="setTableData($event)" [data]="fillFormData" [updateInfo]="updateForm"></app-form>
+    </div>
+</div>

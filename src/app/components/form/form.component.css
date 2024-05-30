@@ -1,0 +1,53 @@
+/* styles.css (or your component's style file) */
+
+.form-container {
+    max-width: 500px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding inside the form */
+    border: 1px solid #ddd; /* Add a light border around the form */
+    border-radius: 8px; /* Round the corners of the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #fff; /* Set the background color to white */
+}
+
+.form-container h2 {
+    text-align: center; /* Center the heading text */
+    color: #333; /* Set the text color */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Add space below each form group */
+}
+
+.form-group label {
+    display: block; /* Make the label a block element */
+    margin-bottom: 5px; /* Add space below the label */
+    font-weight: bold; /* Make the label text bold */
+    color: #333; /* Set the text color */
+}
+
+.form-group input {
+    width: 100%; /* Make the input fields take up the full width of the form group */
+    padding: 10px; /* Add padding inside the input fields */
+    border: 1px solid #ddd; /* Add a light border around the input fields */
+    border-radius: 4px; /* Round the corners of the input fields */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.submit-button {
+    display: block; /* Make the button a block element */
+    width: 100%; /* Make the button take up the full width of its container */
+    padding: 10px; /* Add padding inside the button */
+    background-color: #007BFF; /* Set the background color to blue */
+    color: white; /* Set the text color to white */
+    border: none; /* Remove the default border */
+    border-radius: 4px; /* Round the corners of the button */
+    font-size: 16px; /* Set the font size */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+    margin-top: 20px; /* Add space above the button */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
